@@ -1,24 +1,34 @@
-# Carlos Alvarez MVP Website
+# Carlos Alvarez Personal Website
 
-This is a lightweight static personal website designed for GitHub Pages.
+Personal website for Carlos Alvarez, a UX Researcher focused on AI-enabled research workflows for better decision-making.
+
+The site presents selected research impact, experiments, working principles, and background in a clean static format designed for fast loading and easy maintenance on GitHub Pages.
 
 ## Run Locally
 
 ```bash
 cd "/Users/carlos/Documents/Programming/Website sandbox/MVP"
-python3 -m http.server 4174
+python3 -m http.server 4175
 ```
 
-Open `http://localhost:4174/`.
+Open `http://localhost:4175/`.
 
 ## Deploy To GitHub Pages
 
-Use the `MVP` folder as the site root. For the simplest GitHub Pages setup, copy this folder's contents to the root of the publishing branch, or configure a GitHub Actions workflow to publish this folder as a static artifact.
+This repository is intended to publish at:
 
-No build step is required.
+`https://carlos-alvarezdelavega.github.io`
 
-## Edit Content And Theme
+GitHub Pages should serve the `main` branch from the repository root. No build step is required.
 
-- Content: `content.js`
-- Layout and interactions: `app.js`
-- Theme tokens, colors, fonts, spacing, and dark mode: `styles.css`
+## Project Structure
+
+- `index.html` sets up the page shell and loads the static assets.
+- `content.js` contains the site content and logo references.
+- `app.js` renders the page and handles interactions such as dark mode and expandable impact details.
+- `styles.css` contains theme tokens, responsive layout, typography, and dark mode.
+- `assets/` contains company logos used in the hero section.
+
+## Updating The Site
+
+Edit `content.js` for copy and content changes. Edit the token section at the top of `styles.css` for colors, fonts, spacing, and dark mode refinements.
